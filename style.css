@@ -1,0 +1,431 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: #FAF7F2;
+    color:#1F1F1F ;
+}
+img {
+    width: 100%;
+}
+@media(max-width: 768px){
+    .mainBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+      nav ul {
+        padding: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+     .hero {
+        height: auto;
+        min-height: 350px;
+        background-position: center;
+    }
+
+    .hero-content {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .h1-partOne,
+    .h1-partTwo {
+        font-size: clamp(32px, 8vw, 50px);
+    }
+
+      .about {
+        grid-template-columns: 1fr;
+        padding: 25px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .about img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    }
+
+      .aboutUs {
+        text-align: center;
+    }
+     .aboutUs p {
+        font-size: 10px;
+    }
+
+    .food {
+        padding: 0 20px;
+    }
+
+
+    .food img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .mainBox {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav ul {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero-content {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .h1-partOne,
+    .h1-partTwo {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .btnS {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+
+    .mainBtn,
+    .mainBtn0 {
+        position: static;
+        width: 120px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .about h1 {
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 9px;
+        line-height: 1.6;
+    }
+
+    .food {
+        margin-top: 25px;
+        padding: 0 15px;
+    }
+
+    .food h2 {
+        font-size: 25px;
+    }
+
+    .food img {
+        height: 220px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+.mainBox{
+    background-color:#4E2E1E ;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li {
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    cursor: pointer;
+    gap: 15px;
+}
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li:hover {
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease-in;
+}
+
+.mainBtn{
+    border: none;
+    background-color: #D35400;
+    width: 85px;
+    height: 35px;
+    border-radius: 10px;
+    position: relative;
+    left: 40px;
+    top: 19px;
+    box-shadow: 0 4px 12px rgba(244, 180, 0, 0.30);
+    transition: all 0.3s ease;
+    font-size: 11px;
+}
+
+.mainBtn:Hover{
+   background-color: #F4B400; 
+   transform: translateY(-2px);
+   box-shadow: 0 7px 18px rgba(244, 180, 0, 0.40);
+}
+
+.hero{
+    background-image: url("img/HeroVhavendaDish.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.hero-content h1{
+   color: #cdc6c6;
+    margin: 0;
+    padding-top: 0;
+}
+.hero-content{
+    color: #1a1a0f;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 700px;
+}
+.h1-partOne {
+    font-size: 60px;
+    color: #C97B63;
+     font-size: clamp(35px, 6vw, 60px);
+  
+}
+.h1-partTwo{
+    font-size: 60px;
+    color: #FAF7F2;
+     font-size: clamp(35px, 6vw, 60px);
+}
+.mainBtn0 {
+    border: none;
+    background-color: #fbd5c9;
+    width: 85px;
+    height: 35px;
+    border-radius: 10px;
+    position: relative;
+    left: 7px;
+    top: 19px;
+    box-shadow: 0 4px 12px rgba(244, 180, 0, 0.30);
+    transition: all 0.3s ease;
+    font-size: 10px;
+}
+.mainBtn0:hover{
+    transform: translateY(-2px);
+   box-shadow: 0 7px 18px rgba(246, 189, 35, 0.896);
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #EADCC8;
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+
+}
+.about img{
+    border-radius: 30px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block
+}
+.about h1{
+    font-size: 20px;
+    color: #C97B63;
+
+}
+.aboutUs{
+    width: 100%;
+
+}
+.aboutUs p{
+     line-height: 1.7;
+}
+.food{
+    margin-top: 40px;
+}
+h6.heading{
+    color: #4E2E1E;
+    text-align: center;
+}
+.food h2{
+    text-align: center;
+    color: #4E2E1E;
+}
+.food img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.col{
+     box-shadow: 0 12px 30px rgba(78, 46, 30, 0.20);
+      background: #FAF7F2;
+      border-radius: 16px;
+     transition: all 0.3s ease;
+     display: block;
+     margin: 0 auto;
+}
+
+.col:hover {
+    transform: translateY(-6px);
+     background-color: #F4B400;
+    box-shadow: 0 14px 30px rgba(78, 46, 30, 0.22);
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.benefit-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: #8B5E3C;
+    color: white;
+
+    font-size: 25px;
+}
+.section {
+    padding: 90px 0;
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.why-us{
+    background-color: #EADCC8;
+}
+
+.benefit h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.benefit p {
+    color: #1F1F1F;
+    font-size: 13px;
+}
+
+footer {
+    background: #102b25;
+    color: white;
+    padding-top: 60px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-logo {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #b8c4bf;
+    font-size: 14px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.footer-column a,
+.footer-column p {
+    color: #b8c4bf;
+    font-size: 13px;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: #9eaaa5;
+
+    font-size: 12px;
+}
+
