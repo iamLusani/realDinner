@@ -225,7 +225,7 @@ nav ul li:hover {
 }
 
 .hero{
-    background-image: linear-gradient(rgba(31, 31, 31, 0.45), rgba(31, 31, 31, 0.45)), url("img/HeroVhavendaDish.png");
+    background-image: linear-gradient(rgba(31, 31, 31, 0.45), rgba(31, 31, 31, 0.45)), url("../img/HeroVhavendaDish.png");
     background-size: cover;
     background-position: center;
     min-height: 350px;
