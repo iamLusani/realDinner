@@ -15,3 +15,11 @@ document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('click', addCart);
 });
 
+document.querySelector('#viewMenuBtn').addEventListener('click', () => {
+    document.querySelector('#menu').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.querySelector('#orderNowBtn').addEventListener('click', () => {
+    document.querySelector('#menu').scrollIntoView({ behavior: 'smooth' });
+});
+
